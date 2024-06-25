@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrar</title>
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../imagensHome/imagensLogos/medical-verde.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="center">
+    <form action="">
+      <center>
+        <a href="/index.html">
+          <img src="../imagensHome/imagensLogos/medical-verde.png" href="/index.html" alt="logo do sites" width="200px ">
+        </a>
+        <span class="inputs">
+          <span class="inputf">
+            <input type="email" class="input" placeholder="Email" />
+            <span class="label">Email</span>
+            <span class="material-icons icon">email</span>
+          </span>
+          <span class="inputf">
+            <input type="password" class="input" placeholder="Password" />
+            <span class="label">Senha</span>
+            <span class="material-icons icon">lock</span>
+          </span>
+        </span>
+        <div class="links">
+          <a href="../esqueci-senha/index.html">Esqueci minha senha e agora?</a>
+          <label for="remember">
+            <input type="checkbox" id="remember" />
+            Me lembre
+          </label>
+        </div>
+        <button type="button" class="btn">
+          <span>Entrar</span>
+          <div class="dots">
+            <div class="dot" style="--delay: 0s"></div>
+            <div class="dot" style="--delay: 0.25s"></div>
+            <div class="dot" style="--delay: 0.5s"></div>
+          </div>
+        </button>
+        <div class="text"> Novo usuario ? <a href="../cadastro/index.html">Registre-se</a>
+        </div>
+    </form>
+  </div>
+  <script>
+    var btn = document.querySelector(".btn");
+    var inputs = document.querySelectorAll(".input");
+    btn.onclick = function () {
+      btn.classList.toggle("active");
+      setTimeout(() => {
+        btn.classList.toggle("active");
+        inputs[1].classList.toggle("active");
+      }, 1500);
+      setTimeout(() => {
+        inputs[1].classList.toggle("active");
+      }, 3000);
+    };
+  </script>
+</body>
+
+</html>

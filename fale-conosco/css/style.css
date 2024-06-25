@@ -1,0 +1,45 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2{
+    padding-bottom: 2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    color: #1F999E;
+}
+.main{
+    height: 71vh;
+}
+label {
+    margin-bottom: 8px;
+    display: flex;
+}
+
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #1F999E;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1F999E;
+}
